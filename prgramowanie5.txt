@@ -1,0 +1,65 @@
+#zadanie 2
+def suma(n):
+    if n<=1:
+        return 1
+    else:
+        return n+(suma(n-1))
+print(suma(3))
+
+#zadanie 3
+
+
+def suma(n):
+    s=0
+    while n>0:
+        s=s+n%10
+        n=n//10
+    return s
+print(suma(234))
+
+
+#zadanie 4
+def ciagfib(n):
+    if n==0:
+        return 0
+    if n==1:
+        return 1
+    if n>1:
+        return ciagfib(n-1)+ciagfib(n-2)
+print(ciagfib(7))
+
+#zadanie 5
+
+
+
+def NWD(x,y):
+    if y == 0:
+        return x
+    else:
+        return NWD(y,x%y)
+
+
+
+print(NWD(12,54))
+
+#zadanie 7
+
+def ciagart(a1,n,r):
+    if n<=0:
+        return print("warunek nie spełniony n>=1")
+    if n>0:
+        return a1+(n-1)*r
+print(ciagart(2,1,3))
+
+#zadanie 8
+def ciaggeo(a1,q,n):
+    if n<2:
+        return print("warunki nie spełnione n>=2")
+    if n>=2:
+        return a1*q**(n-1)
+
+print(ciaggeo(2,2,4))
+
+
+
+
